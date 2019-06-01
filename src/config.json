@@ -1,0 +1,11 @@
+{
+	"port": 8081,
+	"bodyLimit": "100kb",
+	"corsHeaders": ["Link"],
+	"facebookID": 1991014767670296,
+	"facebookSecret": "e8ef0984587859c5bd2c13fa2b28ada0",
+	"githubID": "c26f49f6ea830b4fc4d2",
+	"githubSecret": "1deba186b602a3869dc06876f1e8d6a3ed48531e",
+	"spotifyID": "eea893e01cab4ba8bd6c9878cf4b069e",
+	"spotifySecret": "f8b8719bb10d49cfa872af87897b3f75"
+}
