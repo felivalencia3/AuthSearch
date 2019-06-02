@@ -28,7 +28,6 @@ export default () => {
   app.get('/spotify/callback', passport.authenticate('spotify', {
     failureRedirect: '/error',
   }), (req, res) => {
-    res.cook;
     res.redirect('/');
   });
 

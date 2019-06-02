@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 export default (callback) => {
   mongoose.promise = global.Promise;
-  const uristring = 'mongodb://localhost/authsearch';
+  const uristring = process.env.MONGODB_URI || 'mongodb://localhost/authsearch';
   mongoose.connect(uristring, {
     useNewUrlParser: true,
   }, (err) => {
