@@ -6,6 +6,7 @@ import morgan from 'morgan';
 import bodyParser from 'body-parser';
 import passport from 'passport';
 import path from 'path';
+import favicon from 'serve-favicon';
 import initializeDb from './db';
 import authconfig from './middleware/passport';
 import api from './api';
@@ -16,6 +17,7 @@ app.server = http.createServer(app);
 
 // views
 app.set('view engine', 'ejs');
+app.use(favicon(`${__dirname}/nodejs_icon.ico`));
 app.set('views', path.join(__dirname, 'views'));
 // logger
 app.use(morgan('dev'));
